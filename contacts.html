@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Контакты | Rhodium Polymer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A192F",
+                        "accent-green": "#00C853",
+                        "background-light": "#f6f6f8",
+                        "corporate-grey": "#F8FAFC",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; } .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); } .hero-gradient { background: linear-gradient(to right, rgba(10, 25, 47, 0.98) 0%, rgba(10, 25, 47, 0.85) 40%, rgba(10, 25, 47,
+        0.4) 100%); }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 font-display">
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="w-10 h-10" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-black tracking-tighter text-primary">RHODIUM</span>
+                        <span class="block text-xs font-bold tracking-[0.2em] text-accent-green">POLYMER</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./index.html">Главная</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./about.html">О нас</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./production.html">Продукция</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="relative min-h-[35vh] flex items-center overflow-hidden bg-primary pt-20">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASh2z_apCKpNDYRTcZThHdUefHHxZgEz1DylskOXNH3El1L7Yv3_LQ7BotpcjBdoJxqtn_E9htlZgg_HAC2WnNNFNVSeLkNP_um5YqWlDfDNOgAtQFI-g8JTovf1UcSlxuFJYEs-JIziQ7BxpPqZowY_NA38wLIdr4hFfv59KyHia2T8PdQr7aLm1f7fn7Ifbf27kroceAemuspTPSvy7PzVMuF6g2DlvVl4rsN0a3mjltPjDILvQ40RSHo06hVabtUCjwt8oluIy6'); opacity: 0.4;"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+            <div class="max-w-3xl">
+                <nav class="flex items-center gap-2 text-xs font-semibold mb-6 tracking-widest uppercase opacity-70">
+                    <a class="text-white hover:text-accent-green transition-colors" href="#">Главная</a>
+                    <span class="text-white">/</span>
+                    <span class="text-accent-green">Контакты</span>
+                </nav>
+                <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4 uppercase tracking-tight">
+                    КОНТАКТЫ<br/>
+                    <span class="text-accent-green">RHODIUM POLYMER</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-4xl font-black text-primary mb-12 uppercase leading-tight">
+                        Наш офис и<br/>производство
+                    </h2>
+                    <div class="space-y-10">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-corporate-grey rounded-2xl flex items-center justify-center text-accent-green shrink-0 group-hover:bg-accent-green group-hover:text-white transition-all duration-300">
+                                <span class="material-symbols-outlined text-3xl">location_on</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Адрес</h4>
+                                <p class="text-xl font-bold text-primary leading-relaxed">г. Чирчик, Технопарк «Чирчик»,<br/>Блок А-12</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-corporate-grey rounded-2xl flex items-center justify-center text-accent-green shrink-0 group-hover:bg-accent-green group-hover:text-white transition-all duration-300">
+                                <span class="material-symbols-outlined text-3xl">call</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Телефон</h4>
+                                <p class="text-xl font-bold text-primary">+998 71 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-corporate-grey rounded-2xl flex items-center justify-center text-accent-green shrink-0 group-hover:bg-accent-green group-hover:text-white transition-all duration-300">
+                                <span class="material-symbols-outlined text-3xl">mail</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Email</h4>
+                                <p class="text-xl font-bold text-primary">info@rhp.uz</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-14 h-14 bg-corporate-grey rounded-2xl flex items-center justify-center text-accent-green shrink-0 group-hover:bg-accent-green group-hover:text-white transition-all duration-300">
+                                <span class="material-symbols-outlined text-3xl">schedule</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Режим работы</h4>
+                                <p class="text-xl font-bold text-primary">Пн-Пт: 09:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-corporate-grey rounded-3xl p-8 md:p-12 shadow-sm border border-slate-100">
+                    <h3 class="text-2xl font-black text-primary mb-8 uppercase">Напишите нам</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-black text-slate-400 uppercase tracking-widest px-1">Ваше имя</label>
+                                <input class="w-full bg-white border-slate-200 rounded-xl px-5 py-4 focus:ring-accent-green focus:border-accent-green text-primary font-medium transition-all outline-none" placeholder="Иван Иванов" required="" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-black text-slate-400 uppercase tracking-widest px-1">Компания</label>
+                                <input class="w-full bg-white border-slate-200 rounded-xl px-5 py-4 focus:ring-accent-green focus:border-accent-green text-primary font-medium transition-all outline-none" placeholder="Название компании" type="text" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-black text-slate-400 uppercase tracking-widest px-1">Телефон</label>
+                                <input class="w-full bg-white border-slate-200 rounded-xl px-5 py-4 focus:ring-accent-green focus:border-accent-green text-primary font-medium transition-all outline-none" placeholder="+998" required="" type="tel" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-black text-slate-400 uppercase tracking-widest px-1">Email</label>
+                                <input class="w-full bg-white border-slate-200 rounded-xl px-5 py-4 focus:ring-accent-green focus:border-accent-green text-primary font-medium transition-all outline-none" placeholder="example@mail.uz" required="" type="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-black text-slate-400 uppercase tracking-widest px-1">Сообщение</label>
+                            <textarea class="w-full bg-white border-slate-200 rounded-xl px-5 py-4 focus:ring-accent-green focus:border-accent-green text-primary font-medium transition-all outline-none resize-none" placeholder="Ваш вопрос или предложение..." required="" rows="4"></textarea>
+                        </div>
+                        <button class="w-full bg-accent-green text-white py-5 rounded-xl font-black uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-xl shadow-accent-green/20" type="submit">
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-primary uppercase tracking-tight mb-4">Руководство компании</h2>
+                <div class="h-1.5 w-24 bg-accent-green mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-2xl bg-corporate-grey aspect-[4/5]">
+                        <img alt="Генеральный директор" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9S-TqRl18G1KD5WdxuuBGU3JWlRobtAJtzL4Uale8-DjkjpUc9jJuZvICi4W78xBeH7PVWs_RBmce4hX4WjnRipfqnky6eiS7768fw85Sdj1j4MNkzdj9qn1XWbGduaI1gy0Skj7-3NbrzqNAIVyqQsWxBiJmmzGq0yuE_zavCUUfli1wEEQa3XsI_cESGSXk0wWVeBYDAKHcnR0hBKyl4FzzS38J6waPrj-ZeWMIfCG_d0QdVnTqKs9rYjMYVNoAO9Cat-4cSjHc"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-1">Александр Петров</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Генеральный директор</p>
+                    <a class="inline-flex items-center gap-2 text-xs font-black text-accent-green uppercase tracking-widest hover:text-primary transition-colors group/link" href="mailto:ceo@rhp.uz">
+                        Связаться напрямую
+                        <span class="material-symbols-outlined text-sm transform group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+                </div>
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-2xl bg-corporate-grey aspect-[4/5]">
+                        <img alt="Коммерческий директор" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASwmr53HD29rAWIUkshZYbig0kIyfQDCos-rytRzv7xOXT3eTO0B4YRFm2tekl0RF2pPOOENW_J7pgLjRR2VBZbDdV4KPZWEzzWvTZ-yBBczYVrlHvu9a-pSdcktIWxhr4bXoEjoQ1C5tgT-3PPY-yUcuNpB0tolQQQqx37a19wYeedRFu_P6KeaaY0q5JsAuyBxokfoWE_WahXx2jWRWDyc7SK-_xBAPQOcPrEdbv_zeYBsSxsWiMSVKQkDfc2gq9yxOZHEUB3ZXM"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-1">Марина Соколова</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Коммерческий директор</p>
+                    <a class="inline-flex items-center gap-2 text-xs font-black text-accent-green uppercase tracking-widest hover:text-primary transition-colors group/link" href="mailto:sales@rhp.uz">
+                        Связаться напрямую
+                        <span class="material-symbols-outlined text-sm transform group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+                </div>
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-2xl bg-corporate-grey aspect-[4/5]">
+                        <img alt="Главный инженер" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR94tZi6NnTzyXlaRY0KVjq063vfTZmuZdI5PHJK5m7K7x8Mkju9DioRl3hVdz3zriWFRBUC61bLEMFctRhlMxNS6hmCZ5-CzEGDT4FxSgAAAPgbw5pgQ7BtO8nOycqELpEBZEIJRuhzgYkhCXEgOwl-2ba5GBsLx5oaUJWHlETs6pV1ZWToWpSeE8CET4dEtyyzo3ypdSYqigbV7DoSGnhnqODJBGVgj5vO3OCTWApsOe6yIHtchOoTmxnZ3bRkxaD_AFEHRldDyL"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-1">Виктор Иванов</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Главный инженер</p>
+                    <a class="inline-flex items-center gap-2 text-xs font-black text-accent-green uppercase tracking-widest hover:text-primary transition-colors group/link" href="mailto:eng@rhp.uz">
+                        Связаться напрямую
+                        <span class="material-symbols-outlined text-sm transform group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+                </div>
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-2xl bg-corporate-grey aspect-[4/5]">
+                        <img alt="Операционный директор" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRwGy1Rl58NUALq97Vdtz35hrM0jJWXN5BJxgB6T1cIRo8oGi3IHApi1kHUYoGMqpmc1t_DgDv0DYl8CAadPyaf2BMyN0I-odV5Ov3H0wEoG6yJTwBPfVxTiRK39f-cdUIa6k3eaVO6fD5T73o_HMB1cFOqNaCWa0CBU3YtQZ9k8n8qrIC8kEu6nc7eoOshNc8v9QSISsq5Hxh046uJbmV_YCN6hvMnWrHwnOJT8PHjzIrs2GNYBgjz6mtuvFaMcrXTJEiMgdToetp"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-1">Дамир Султанов</h3>
+                    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Операционный директор</p>
+                    <a class="inline-flex items-center gap-2 text-xs font-black text-accent-green uppercase tracking-widest hover:text-primary transition-colors group/link" href="mailto:ops@rhp.uz">
+                        Связаться напрямую
+                        <span class="material-symbols-outlined text-sm transform group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full h-[500px] relative">
+        <div class="absolute inset-0 overflow-hidden">
+            <img alt="Modern Industrial Facility Chirchik Technopark" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBYvcVUBdhzo9GlEElYtnWOVk-gPbAlw9CQSSTpX_5cZagikcB60bqdYhCEbzX-siB1QihfVzMfLFG6BBu5T0F8shBdOlSt2iV--vAHquHJuflQJUxup2oDSdH8OUYl_NLz8LyXWd_gEhrjGe86atEMtKvtUytNRujNv2KPyqrJoVz6RWeNH0v24QCd2twRZS-3pMLZovfADi5qGT1uqqE9YVceDDyfLHOgWekuUHNHYYBLMSmBeXWtrfSTufqH9IY8ObOKuoIjvvg"
+            />
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/30 to-primary/60"></div>
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <div class="relative">
+                    <div class="absolute -inset-8 bg-accent-green/20 rounded-full blur-2xl animate-pulse"></div>
+                    <div class="absolute -inset-4 bg-accent-green/40 rounded-full blur-xl animate-pulse"></div>
+                    <div class="relative w-20 h-20 bg-accent-green text-white rounded-2xl flex items-center justify-center shadow-2xl border-4 border-white transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <span class="material-symbols-outlined text-4xl">factory</span>
+                    </div>
+                </div>
+                <div class="mt-8 bg-white/95 backdrop-blur-md px-8 py-4 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-slate-200 text-center">
+                    <span class="block text-[10px] font-black text-accent-green uppercase tracking-[0.3em] mb-1">ЛОКАЦИЯ ПРОИЗВОДСТВА</span>
+                    <p class="text-primary font-black text-base uppercase whitespace-nowrap">Технопарк «Чирчик», Блок А-12</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-8 hidden lg:block">
+            <p class="text-white/40 font-mono text-xs tracking-widest">COORD: 41.4682° N, 69.5822° E</p>
+        </div>
+        <div class="absolute top-8 right-8 hidden lg:block">
+            <div class="flex gap-4">
+                <div class="w-12 h-0.5 bg-accent-green/50 self-center"></div>
+                <p class="text-white/40 font-mono text-xs tracking-widest uppercase">Industrial Zone Alpha</p>
+            </div>
+        </div>
+    </section>
+    <section class="py-12 bg-corporate-grey border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
+                <div class="w-12 h-12 bg-accent-green/10 rounded-full flex items-center justify-center text-accent-green">
+                    <span class="material-symbols-outlined">event_available</span>
+                </div>
+                <p class="text-lg font-bold text-primary">Хотите посетить наше производство? Запланируйте визит заранее.</p>
+                <a class="text-accent-green font-black uppercase tracking-widest hover:underline decoration-2 underline-offset-8" href="#">Записаться на визит</a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-white py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="text-accent-green">
+                            <svg class="w-10 h-10" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-black tracking-tighter text-white">RHODIUM</span>
+                            <span class="block text-xs font-bold tracking-[0.2em] text-accent-green">POLYMER</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-8 max-w-sm">Первое в Центральной Азии производство вспененного полипропилена. Инновации в каждой грануле.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Продукция</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a class="hover:text-accent-green transition-colors" href="#">Сырье EPP</a></li>
+                        <li><a class="hover:text-accent-green transition-colors" href="#">Автокомпоненты</a></li>
+                        <li><a class="hover:text-accent-green transition-colors" href="#">Термобоксы</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-accent-green">Контакты</h4>
+                    <p class="text-slate-400 mb-2">+998 71 123-45-67</p>
+                    <p class="text-slate-400">info@rhp.uz</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Офис</h4>
+                    <p class="text-slate-400">г. Чирчик, Технопарк «Чирчик», Блок A-12</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+                <p>© 2024 RHODIUM POLYMER. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

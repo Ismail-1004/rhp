@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Наши Продукты | Rhodium Polymer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A192F",
+                        "accent-green": "#00C853",
+                        "background-light": "#f6f6f8",
+                        "corporate-grey": "#F8FAFC",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; } .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); } .hero-gradient { background: linear-gradient(to right, rgba(10, 25, 47, 0.98) 0%, rgba(10, 25, 47, 0.85) 40%, rgba(10, 25, 47,
+        0.4) 100%); } .filter-chip.active { @apply bg-accent-green text-white border-accent-green; } .category-content { display: none; } .category-content.active { display: grid; }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 font-display">
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="w-10 h-10" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-black tracking-tighter text-primary">RHODIUM</span>
+                        <span class="block text-xs font-bold tracking-[0.2em] text-accent-green">POLYMER</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./index.html">Главная</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./about.html">О нас</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./production.html">Продукция</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="relative min-h-[40vh] flex items-center overflow-hidden bg-primary pt-20">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASh2z_apCKpNDYRTcZThHdUefHHxZgEz1DylskOXNH3El1L7Yv3_LQ7BotpcjBdoJxqtn_E9htlZgg_HAC2WnNNFNVSeLkNP_um5YqWlDfDNOgAtQFI-g8JTovf1UcSlxuFJYEs-JIziQ7BxpPqZowY_NA38wLIdr4hFfv59KyHia2T8PdQr7aLm1f7fn7Ifbf27kroceAemuspTPSvy7PzVMuF6g2DlvVl4rsN0a3mjltPjDILvQ40RSHo06hVabtUCjwt8oluIy6');"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+            <div class="max-w-3xl">
+                <nav class="flex items-center gap-2 text-xs font-semibold mb-6 tracking-widest uppercase opacity-70">
+                    <a class="text-white hover:text-accent-green transition-colors" href="#">Главная</a>
+                    <span class="text-white">/</span>
+                    <span class="text-accent-green">Продукция</span>
+                </nav>
+                <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4 uppercase tracking-tight">
+                    НАША ПРОДУКЦИЯ<br/>
+                    <span class="text-accent-green">КАТАЛОГ РЕШЕНИЙ</span>
+                </h1>
+                <p class="text-base text-slate-300 leading-relaxed max-w-xl font-normal opacity-90">
+                    Высокотехнологичное сырье EPP и готовые изделия для промышленности, логистики и дизайна.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-3xl font-black text-primary mb-4 uppercase">Результат нашей продукции</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto">Эффективность в цифрах: как решения из вспененного полипропилена меняют современное производство и экологию.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-corporate-grey p-8 rounded-2xl flex flex-col items-center text-center border border-slate-100 hover:border-accent-green transition-all group">
+                    <span class="material-symbols-outlined text-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform">assistant_navigation</span>
+                    <div class="text-4xl font-black text-primary mb-2">30%</div>
+                    <div class="text-sm font-bold text-slate-600 uppercase tracking-tight">меньше деформация в бамперах</div>
+                </div>
+                <div class="bg-corporate-grey p-8 rounded-2xl flex flex-col items-center text-center border border-slate-100 hover:border-accent-green transition-all group">
+                    <span class="material-symbols-outlined text-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform">eco</span>
+                    <div class="text-4xl font-black text-primary mb-2">100%</div>
+                    <div class="text-sm font-bold text-slate-600 uppercase tracking-tight">перерабатываемое сырье</div>
+                </div>
+                <div class="bg-corporate-grey p-8 rounded-2xl flex flex-col items-center text-center border border-slate-100 hover:border-accent-green transition-all group">
+                    <span class="material-symbols-outlined text-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform">delete_sweep</span>
+                    <div class="text-4xl font-black text-primary mb-2">90%</div>
+                    <div class="text-sm font-bold text-slate-600 uppercase tracking-tight">меньше отходов</div>
+                </div>
+                <div class="bg-corporate-grey p-8 rounded-2xl flex flex-col items-center text-center border border-slate-100 hover:border-accent-green transition-all group">
+                    <span class="material-symbols-outlined text-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform">heat_pump</span>
+                    <div class="text-4xl font-black text-primary mb-2">20%</div>
+                    <div class="text-sm font-bold text-slate-600 uppercase tracking-tight">экономия тепла в полах</div>
+                </div>
+                <div class="bg-corporate-grey p-8 rounded-2xl flex flex-col items-center text-center border border-slate-100 hover:border-accent-green transition-all group">
+                    <span class="material-symbols-outlined text-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform">schedule</span>
+                    <div class="text-4xl font-black text-primary mb-2">6 часов</div>
+                    <div class="text-sm font-bold text-slate-600 uppercase tracking-tight">сохранения температуры в термоконтейнерах</div>
+                </div>
+                <div class="bg-corporate-grey p-8 rounded-2xl flex flex-col items-center text-center border border-slate-100 hover:border-accent-green transition-all group">
+                    <span class="material-symbols-outlined text-accent-green text-5xl mb-4 group-hover:scale-110 transition-transform">public</span>
+                    <div class="text-4xl font-black text-primary mb-2">10+ тонн</div>
+                    <div class="text-sm font-bold text-slate-600 uppercase tracking-tight">ежемесячный экспорт</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-black text-primary mb-4 uppercase">Применение решений</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Инновационные продукты из EPP для различных сфер деятельности.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-chip active px-8 py-3 rounded-xl border-2 border-slate-200 font-bold hover:border-accent-green transition-all shadow-sm" id="btn-hoz" onclick="switchCategory('hoz')">Хозяйственные нужды</button>
+                <button class="filter-chip px-8 py-3 rounded-xl border-2 border-slate-200 font-bold hover:border-accent-green transition-all shadow-sm" id="btn-toys" onclick="switchCategory('toys')">Детские игрушки</button>
+                <button class="filter-chip px-8 py-3 rounded-xl border-2 border-slate-200 font-bold hover:border-accent-green transition-all shadow-sm" id="btn-auto" onclick="switchCategory('auto')">Автотовары</button>
+                <button class="filter-chip px-8 py-3 rounded-xl border-2 border-slate-200 font-bold hover:border-accent-green transition-all shadow-sm" id="btn-sheet" onclick="switchCategory('sheet')">Лист из вспененного полипропилена</button>
+            </div>
+            <div class="category-content active grid grid-cols-1 md:grid-cols-2 gap-8" id="cat-hoz">
+                <div class="bg-corporate-grey rounded-3xl overflow-hidden border border-slate-100 group">
+                    <div class="h-64 overflow-hidden">
+                        <img alt="Кресло" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFncD86WmczCcJ32IRm7Fpf014t_grKps1A7ykRoKxZjk1hfu4hA1xudwTyggnYdFFC9UtSdyoY01mTgfRaA9yI_f9roTcWgM1btJFUJI1qIEl_N5qp3ur1DDFmxPcuLGvuTomy-4xZTB2BAGQjwIwSleyiFUXary5TEP5X30_sOwKRh_zVxosXVCHe0n42SlskDJcErIv-Sb6Keqy2iOQ2_-lFcz6GqRZzUY9YjsFCztdQyk-R551yjbtFlv-g81d0hPyPROj_BR9"
+                        />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-primary mb-3 uppercase">Кресло</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Эргономичное и сверхлегкое кресло с использованием премиального EPP-наполнителя для максимального комфорта.</p>
+                        <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-accent-green transition-all">Подробнее</button>
+                    </div>
+                </div>
+                <div class="bg-corporate-grey rounded-3xl overflow-hidden border border-slate-100 group">
+                    <div class="h-64 overflow-hidden">
+                        <img alt="Бескаркасная мебель" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0npq2XpE9bPyZTmDduJJphlZT1gsR2YFZju3aQg2aS36x66aguO0M-JNrcVZn9XvfmPNTiWEakKZyzN6Cv212WIqZNvUdbb8dLyfjSjMWXPjQwu51LFAyeRFeogfUlZ-Hr11f-cRI-CZ2DyiUJTZQKrBetr9ADgpswE5KXuJrfd4G_UDF-CCdEFsQVaO17iC2AqN0iOA88BWp_FAkhRhz4vSaG4qNfsnNDB7MayLn2yu_TfNqyK-TlBQIYE1eh1gHCHos4AKG_mej"
+                        />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-primary mb-3 uppercase">Бескаркасная мебель</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Современные решения для дома и офиса: пуфы и диваны, сохраняющие форму на протяжении долгих лет.</p>
+                        <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-accent-green transition-all">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content grid grid-cols-1 md:grid-cols-2 gap-8" id="cat-toys">
+                <div class="bg-corporate-grey rounded-3xl overflow-hidden border border-slate-100 group">
+                    <div class="h-64 overflow-hidden">
+                        <img alt="Детская кровать" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASh2z_apCKpNDYRTcZThHdUefHHxZgEz1DylskOXNH3El1L7Yv3_LQ7BotpcjBdoJxqtn_E9htlZgg_HAC2WnNNFNVSeLkNP_um5YqWlDfDNOgAtQFI-g8JTovf1UcSlxuFJYEs-JIziQ7BxpPqZowY_NA38wLIdr4hFfv59KyHia2T8PdQr7aLm1f7fn7Ifbf27kroceAemuspTPSvy7PzVMuF6g2DlvVl4rsN0a3mjltPjDILvQ40RSHo06hVabtUCjwt8oluIy6"
+                        />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-primary mb-3 uppercase">Детская кровать</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Детская кровать, изготовленная из безопасного EPP. Легкость, отсутствие острых углов и экологическая чистота.</p>
+                        <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-accent-green transition-all">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content grid grid-cols-1 md:grid-cols-2 gap-8" id="cat-auto">
+                <div class="bg-corporate-grey rounded-3xl overflow-hidden border border-slate-100 group">
+                    <div class="h-64 overflow-hidden">
+                        <img alt="Автокомпоненты" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLfoJuq3gFoce_sNu8oQtPDTNjqKu4e_XzbhrGtnfPrZLPEfdCkErvKrC2zIO262K61HFb8F2gT5FZPauIClyHPOy_WFo8hcT2FCZsOCwReOH9x-QZsCLKW0YHk6BZbM1qq0A_8vKyztG5Gy-_qusVbG-8hyGdEWmWOH1VcXbG1csx6eaDiu8O9t6d-jfQBIplY2PKD6jKUPfVfkpZL7nQwDeyp6ui_QolLfFZ2ksjsostc_SCDzH23S5bglZypAgQBESzyYX0jBh3"
+                        />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-primary mb-3 uppercase">Автокомпоненты</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Элементы пассивной безопасности и шумоизоляции для ведущих автопроизводителей.</p>
+                        <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-accent-green transition-all">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-content grid grid-cols-1 md:grid-cols-2 gap-8" id="cat-sheet">
+                <div class="bg-corporate-grey rounded-3xl overflow-hidden border border-slate-100 group">
+                    <div class="h-64 overflow-hidden">
+                        <img alt="Лист из EPP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmg89bUzjcoIU5my2vrq0854PgJ6JVBWTEaPMnCYzPcTlQj831d7mgtD1u9B2dzhGSxsf1N6JfibdBUD7rFbPH17jgxj-5XOuygiYqR3kwliClci5QugIKqAizUzcmicDmLkIyz0TYEMAUZzcZ23q-5LX5xsInimQum_xw4RQB-fsZVxsT3e5Wg3AJ298fmFapDoie4OnIPVGJ49snOdG9p7qB7cadQG3vzyyJ6eG-kGtsRH-5QhCklcWzRWGC7pmwS_jTa5LGrqRM"
+                        />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-primary mb-3 uppercase">Лист из вспененного полипропилена</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Универсальный материал для промышленного и строительного использования: изоляция, упаковка и защита поверхностей.</p>
+                        <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-accent-green transition-all">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function switchCategory(catId) {
+            document.querySelectorAll('.category-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.filter-chip').forEach(el => el.classList.remove('active'));
+            document.getElementById('cat-' + catId).classList.add('active');
+            document.getElementById('btn-' + catId).classList.add('active');
+        }
+    </script>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                <div class="lg:w-1/3 bg-accent-green p-12 flex flex-col justify-center text-white">
+                    <h2 class="text-4xl font-black mb-6 uppercase leading-tight">Наши<br/>продукты</h2>
+                    <p class="opacity-90 font-medium">Технические характеристики сырья для вашего производства.</p>
+                </div>
+                <div class="lg:w-2/3 p-12 bg-white grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-corporate-grey rounded-lg flex items-center justify-center text-accent-green shrink-0">
+                            <span class="material-symbols-outlined">layers</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Материал</h4>
+                            <p class="text-primary font-bold">вспененный полипропилен (EPP)</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-corporate-grey rounded-lg flex items-center justify-center text-accent-green shrink-0">
+                            <span class="material-symbols-outlined">grain</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Форма</h4>
+                            <p class="text-primary font-bold">гранулы</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-corporate-grey rounded-lg flex items-center justify-center text-accent-green shrink-0">
+                            <span class="material-symbols-outlined">straighten</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Плотность</h4>
+                            <p class="text-primary font-bold">20-80 кг/м³</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-corporate-grey rounded-lg flex items-center justify-center text-accent-green shrink-0">
+                            <span class="material-symbols-outlined">palette</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Цвет</h4>
+                            <p class="text-primary font-bold">белый, черный, серый, цветные</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 md:col-span-2">
+                        <div class="w-12 h-12 bg-corporate-grey rounded-lg flex items-center justify-center text-accent-green shrink-0">
+                            <span class="material-symbols-outlined">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Безопасность</h4>
+                            <p class="text-primary font-bold">нетоксичный, 100% переработка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-corporate-grey">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-primary mb-4 uppercase">EPP в других цветах</h2>
+                <p class="text-slate-500">Мы предлагаем широкую палитру сырья для реализации любых дизайнерских и технических задач.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-slate-50 flex items-center justify-center overflow-hidden">
+                        <img alt="White EPP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0npq2XpE9bPyZTmDduJJphlZT1gsR2YFZju3aQg2aS36x66aguO0M-JNrcVZn9XvfmPNTiWEakKZyzN6Cv212WIqZNvUdbb8dLyfjSjMWXPjQwu51LFAyeRFeogfUlZ-Hr11f-cRI-CZ2DyiUJTZQKrBetr9ADgpswE5KXuJrfd4G_UDF-CCdEFsQVaO17iC2AqN0iOA88BWp_FAkhRhz4vSaG4qNfsnNDB7MayLn2yu_TfNqyK-TlBQIYE1eh1gHCHos4AKG_mej"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-black text-primary mb-3">Белый</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Чистое сырье для медицинских контейнеров и дизайнерской мебели. Обладает высочайшей чистотой состава.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-slate-50 flex items-center justify-center overflow-hidden">
+                        <img alt="Grey EPP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmg89bUzjcoIU5my2vrq0854PgJ6JVBWTEaPMnCYzPcTlQj831d7mgtD1u9B2dzhGSxsf1N6JfibdBUD7rFbPH17jgxj-5XOuygiYqR3kwliClci5QugIKqAizUzcmicDmLkIyz0TYEMAUZzcZ23q-5LX5xsInimQum_xw4RQB-fsZVxsT3e5Wg3AJ298fmFapDoie4OnIPVGJ49snOdG9p7qB7cadQG3vzyyJ6eG-kGtsRH-5QhCklcWzRWGC7pmwS_jTa5LGrqRM"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-black text-primary mb-3">Серый</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Баланс эстетики и функциональности. Идеально скрывает мелкие загрязнения, сохраняя премиальный вид.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-slate-50 flex items-center justify-center overflow-hidden">
+                        <img alt="Black EPP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLfoJuq3gFoce_sNu8oQtPDTNjqKu4e_XzbhrGtnfPrZLPEfdCkErvKrC2zIO262K61HFb8F2gT5FZPauIClyHPOy_WFo8hcT2FCZsOCwReOH9x-QZsCLKW0YHk6BZbM1qq0A_8vKyztG5Gy-_qusVbG-8hyGdEWmWOH1VcXbG1csx6eaDiu8O9t6d-jfQBIplY2PKD6jKUPfVfkpZL7nQwDeyp6ui_QolLfFZ2ksjsostc_SCDzH23S5bglZypAgQBESzyYX0jBh3"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-black text-primary mb-3">Чёрный</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Индустриальный стандарт. Максимальная защита от УФ-излучения и высокая температурная стабильность.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="h-48 bg-slate-50 flex items-center justify-center overflow-hidden">
+                        <img alt="Blue EPP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMAYKUVS55RLWTR-0ygMkJCH2NIBh93801EP8z8do6JwoqT6pETyW2gdI1JPdJMSuoip7FVrrZyTF4bumOHEWHqdbjKSEEzuhAHpXrNQW-VoWDRBRntxicdCtE-oj39uO8x00edAl_P1F61cGW5eySJfFU49BGuRH1F9tJ5yxyRBRNozS9ctdnBN_25N7WXbZeo2rMF7Pbf6XqXUQByTayW7BBtUwGly53Fmz-Jt20_bRU1bQeDa17X0xF60BCrlSweMD1IsNnRaMG"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-black text-primary mb-3">Синий</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Специализированная серия для логистики продуктов питания. Легко идентифицируется в производственной среде.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-primary overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-accent-green/10 -skew-x-12 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+            <div class="lg:flex items-center justify-between gap-12">
+                <div class="mb-8 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Нужна индивидуальная партия?</h2>
+                    <p class="text-slate-400 text-lg max-w-2xl">Мы разрабатываем пресс-формы и производим изделия по вашим чертежам. Получите расчет стоимости вашего проекта в течение 24 часов.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a class="bg-accent-green text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-all shadow-xl shadow-accent-green/20 text-center" href="#">Оставить заявку</a>
+                    <a class="border border-white/20 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition-all text-center" href="#">Консультация эксперта</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-white py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="text-accent-green">
+                            <svg class="w-10 h-10" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-black tracking-tighter text-white">RHODIUM</span>
+                            <span class="block text-xs font-bold tracking-[0.2em] text-accent-green">POLYMER</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-8 max-w-sm">Первое в Центральной Азии производство вспененного полипропилена. Инновации в каждой грануле.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Продукция</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a class="hover:text-accent-green transition-colors" href="#">Сырье EPP</a></li>
+                        <li><a class="hover:text-accent-green transition-colors" href="#">Автокомпоненты</a></li>
+                        <li><a class="hover:text-accent-green transition-colors" href="#">Термобоксы</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-accent-green">Контакты</h4>
+                    <p class="text-slate-400 mb-2">+998 71 123-45-67</p>
+                    <p class="text-slate-400">info@rhp.uz</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Офис</h4>
+                    <p class="text-slate-400">г. Чирчик, Технопарк «Чирчик», Блок A-12</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+                <p>© 2024 RHODIUM POLYMER. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

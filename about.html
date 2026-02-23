@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RHP: About Us &amp; Team - Rhodium Polymer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A192F",
+                        "accent-green": "#00C853",
+                        "background-light": "#f6f6f8",
+                        "corporate-grey": "#F8FAFC",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; } .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); } details > summary { list-style: none; } details > summary::-webkit-details-marker { display: none; } .cert-hover:hover { box-shadow:
+        0 10px 25px -5px rgba(0, 200, 83, 0.2); } .hero-gradient { background: linear-gradient(to right, rgba(10, 25, 47, 0.98) 0%, rgba(10, 25, 47, 0.85) 40%, rgba(10, 25, 47, 0.4) 100%); }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 font-display">
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="text-primary">
+                        <svg class="w-10 h-10" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-black tracking-tighter text-primary">RHODIUM</span>
+                        <span class="block text-xs font-bold tracking-[0.2em] text-accent-green">POLYMER</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./index.html">Главная</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./about.html">О нас</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./production.html">Продукция</a>
+                    <a class="text-sm font-semibold text-primary hover:text-accent-green transition-colors" href="./contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="relative min-h-[60vh] flex items-center overflow-hidden bg-primary pt-20">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASh2z_apCKpNDYRTcZThHdUefHHxZgEz1DylskOXNH3El1L7Yv3_LQ7BotpcjBdoJxqtn_E9htlZgg_HAC2WnNNFNVSeLkNP_um5YqWlDfDNOgAtQFI-g8JTovf1UcSlxuFJYEs-JIziQ7BxpPqZowY_NA38wLIdr4hFfv59KyHia2T8PdQr7aLm1f7fn7Ifbf27kroceAemuspTPSvy7PzVMuF6g2DlvVl4rsN0a3mjltPjDILvQ40RSHo06hVabtUCjwt8oluIy6');"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
+            <div class="max-w-3xl">
+                <nav class="flex items-center gap-2 text-xs font-semibold mb-6 tracking-widest uppercase opacity-70">
+                    <a class="text-white hover:text-accent-green transition-colors" href="#">Главная</a>
+                    <span class="text-white">/</span>
+                    <span class="text-accent-green">О компании</span>
+                </nav>
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-[1.1] mb-6 uppercase tracking-tight">
+                    О КОМПАНИИ<br/>
+                    <span class="text-accent-green">RHODIUM POLYMER</span>
+                </h1>
+                <p class="text-base md:text-lg text-slate-300 leading-relaxed max-w-xl font-normal opacity-90">
+                    Сочетание передовых европейских технологий, промышленной точности и инновационного производства в Средней Азии.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white" id="history">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl">
+                        <img alt="RHP Plant Facility" class="w-full h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0npq2XpE9bPyZTmDduJJphlZT1gsR2YFZju3aQg2aS36x66aguO0M-JNrcVZn9XvfmPNTiWEakKZyzN6Cv212WIqZNvUdbb8dLyfjSjMWXPjQwu51LFAyeRFeogfUlZ-Hr11f-cRI-CZ2DyiUJTZQKrBetr9ADgpswE5KXuJrfd4G_UDF-CCdEFsQVaO17iC2AqN0iOA88BWp_FAkhRhz4vSaG4qNfsnNDB7MayLn2yu_TfNqyK-TlBQIYE1eh1gHCHos4AKG_mej"
+                        />
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-accent-green p-8 rounded-2xl shadow-xl hidden xl:block">
+                        <p class="text-white text-sm font-bold uppercase tracking-widest mb-1">Центральная Азия</p>
+                        <p class="text-white text-2xl font-black">№1 Производитель EPP</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-accent-green font-bold tracking-widest uppercase text-sm block mb-4">Наше наследие</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-primary mb-8 leading-tight">Технопарк «Чирчик»: Инновационный Хаб</h2>
+                    <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
+                        <p>Наше предприятие расположено в стратегически важном промышленном кластере — технопарке «Чирчик». Здесь мы реализовали амбициозный проект по созданию первого в Центральной Азии завода вспененного полипропилена (EPP).</p>
+                        <p>Обладая производственной мощностью более 2000 тонн в год, мы не просто производим материал — мы создаем решения для автомобильной, упаковочной и строительной индустрий, опираясь на уникальные свойства EPP: легкость, прочность и
+                            экологичность.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="h-1.5 w-24 bg-accent-green mx-auto mb-10"></div>
+                <h2 class="text-3xl md:text-5xl font-black text-primary leading-tight mb-10 tracking-tight uppercase">
+                    Стать лидером полимерной трансформации региона, внедряя технологии, которые ранее были доступны только на крупнейших рынках Европы и Азии.
+                </h2>
+                <div class="h-1.5 w-24 bg-accent-green mx-auto"></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-accent-green font-bold tracking-widest uppercase text-sm block mb-4">Применение EPP</span>
+                <h2 class="text-4xl md:text-5xl font-black text-primary">Сферы применения продукции</h2>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="p-10 bg-corporate-grey rounded-3xl border border-slate-200 hover:border-accent-green transition-all group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-accent-green transition-colors">
+                        <span class="material-symbols-outlined text-accent-green text-4xl group-hover:text-white">directions_car</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-primary mb-4">Автомобильная промышленность</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Использование EPP значительно снижает общий вес автомобиля, что ведет к сокращению выбросов CO2. Материал обеспечивает превосходные показатели безопасности в краш-тестах благодаря высокой энергопоглощающей способности.
+                    </p>
+                </div>
+                <div class="p-10 bg-corporate-grey rounded-3xl border border-slate-200 hover:border-accent-green transition-all group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-accent-green transition-colors">
+                        <span class="material-symbols-outlined text-accent-green text-4xl group-hover:text-white">eco</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-primary mb-4">Экологичность</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Продукция абсолютно нетоксична и химически инертна. Она безопасна для использования в контакте с пищевыми продуктами и не выделяет вредных веществ в окружающую среду в процессе эксплуатации.
+                    </p>
+                </div>
+                <div class="p-10 bg-corporate-grey rounded-3xl border border-slate-200 hover:border-accent-green transition-all group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-accent-green transition-colors">
+                        <span class="material-symbols-outlined text-accent-green text-4xl group-hover:text-white">recycling</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-primary mb-4">Переработка 100%</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        EPP является полностью перерабатываемым материалом. Мы поддерживаем экономику замкнутого цикла, обеспечивая защиту окружающей среды через повторное использование ресурсов без потери качества.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 text-center">
+                <div class="p-12 bg-background-light rounded-[3rem] border border-slate-100">
+                    <p class="text-accent-green text-7xl font-black mb-4">2000+</p>
+                    <p class="text-primary text-xl font-bold uppercase tracking-wider">Тонн продукции в год</p>
+                    <p class="text-slate-500 mt-4">Годовая производственная мощность завода</p>
+                </div>
+                <div class="p-12 bg-background-light rounded-[3rem] border border-slate-100">
+                    <p class="text-accent-green text-7xl font-black mb-4">1000+</p>
+                    <p class="text-primary text-xl font-bold uppercase tracking-wider">Видов сырья</p>
+                    <p class="text-slate-500 mt-4">Объем и разнообразие используемых полимеров</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-accent-green font-bold tracking-widest uppercase text-sm block mb-4">Профессионализм</span>
+                <h2 class="text-4xl md:text-5xl font-black text-primary">Наша команда</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group">
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 mb-6 border border-slate-200">
+                        <img alt="Александр Петров" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLfoJuq3gFoce_sNu8oQtPDTNjqKu4e_XzbhrGtnfPrZLPEfdCkErvKrC2zIO262K61HFb8F2gT5FZPauIClyHPOy_WFo8hcT2FCZsOCwReOH9x-QZsCLKW0YHk6BZbM1qq0A_8vKyztG5Gy-_qusVbG-8hyGdEWmWOH1VcXbG1csx6eaDiu8O9t6d-jfQBIplY2PKD6jKUPfVfkpZL7nQwDeyp6ui_QolLfFZ2ksjsostc_SCDzH23S5bglZypAgQBESzyYX0jBh3"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-1">Александр Петров</h4>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Генеральный директор</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 mb-6 border border-slate-200">
+                        <img alt="Елена Иванова" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmg89bUzjcoIU5my2vrq0854PgJ6JVBWTEaPMnCYzPcTlQj831d7mgtD1u9B2dzhGSxsf1N6JfibdBUD7rFbPH17jgxj-5XOuygiYqR3kwliClci5QugIKqAizUzcmicDmLkIyz0TYEMAUZzcZ23q-5LX5xsInimQum_xw4RQB-fsZVxsT3e5Wg3AJ298fmFapDoie4OnIPVGJ49snOdG9p7qB7cadQG3vzyyJ6eG-kGtsRH-5QhCklcWzRWGC7pmwS_jTa5LGrqRM"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-1">Елена Иванова</h4>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Главный инженер</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 mb-6 border border-slate-200">
+                        <img alt="Дмитрий Соколов" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMAYKUVS55RLWTR-0ygMkJCH2NIBh93801EP8z8do6JwoqT6pETyW2gdI1JPdJMSuoip7FVrrZyTF4bumOHEWHqdbjKSEEzuhAHpXrNQW-VoWDRBRntxicdCtE-oj39uO8x00edAl_P1F61cGW5eySJfFU49BGuRH1F9tJ5yxyRBRNozS9ctdnBN_25N7WXbZeo2rMF7Pbf6XqXUQByTayW7BBtUwGly53Fmz-Jt20_bRU1bQeDa17X0xF60BCrlSweMD1IsNnRaMG"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-1">Дмитрий Соколов</h4>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">AI Специалист</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 mb-6 border border-slate-200">
+                        <img alt="Марина Волкова" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaRdAhMHxBtmNPjjIerYVvw0usFZ9jiBEXXCi4BdTYmiZ2_nl1eKlt3EZXJNtoDxQHqBlIPoq7tqn7n0lRBlbGWu2zVvYaLJ41dcRQFQz6bl6pEweYQVq1vcOEkoqlHuFWfWXzkIWofOA51TL7vCeGItxQq-yrffe1ax6q1PlSY0SiemNuY8MofnRxkjYGDsJxH43UFtIsNe6nNtmv9HT55sUExafAxEYfp2_kPQZ5M7noYI0Kb9bSKLiep9eLggxq5F_WTk9mwCkt"
+                        />
+                    </div>
+                    <h4 class="text-xl font-bold text-primary mb-1">Марина Волкова</h4>
+                    <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Руководитель R&amp;D</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-accent-green font-bold tracking-widest uppercase text-sm block mb-4">Гарантия качества</span>
+                <h2 class="text-4xl md:text-5xl font-black text-primary">Сертификаты и стандарты качества</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="text-center group">
+                    <div class="bg-corporate-grey border border-slate-200 rounded-xl p-6 aspect-[4/5] flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-105 cert-hover overflow-hidden">
+                        <img alt="ISO 9001:2015" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg2ONiZv9jsM8Aaa1oyNXH2fPdcrLWk3ai7xA2xQ4JFuTab_Byx6COJPrAdg0-cq-am2qF-shbDHUAOywwfgLha4l9yKFUgAaBb1_M1GO0Zwg5G93lwDeacrakr4fKrOfdyYb8yE_j7IRNhggmQkdS1q1JeLNJZOS3hPkVa7MfdksV0bYL_C-1qwQKTKecAzRTHcHxNkslEdoXZlFMd4EZ534PvQ_H2H1zDmWddKy09MsAsVHK1bx6ndoWl0RwFxu3H__dot37tVXQ"
+                        />
+                    </div>
+                    <p class="text-sm font-bold text-primary px-2">Сертификат ISO 9001:2015</p>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-corporate-grey border border-slate-200 rounded-xl p-6 aspect-[4/5] flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-105 cert-hover overflow-hidden">
+                        <img alt="ISO 14001" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARZysAhzdBc1yoKWxRwEOMsl0mvQDrnKqDl1A60Cv2kSWISn0PqJlIX1vCRlvq965GrCi7PC1w_7ZjkYPTdM2sW1B9a1FElAAtk_O0CpTaslFJOmEJP1gw6Pufw4nrOBYK0ExNigEMrEoF3VWCgwhwfH7ChuELgTfUelloYqkFOtfo5PqUeawz3RzrfVwmBjPM8iHEeYqeaCh--1DX16K4rLVK4iXGybmEXpX4A7sVMs2SLIhVtgxq2XQ00VBCmEo0X-VI3UsNWGCz"
+                        />
+                    </div>
+                    <p class="text-sm font-bold text-primary px-2">Сертификат ISO 14001</p>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-corporate-grey border border-slate-200 rounded-xl p-6 aspect-[4/5] flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-105 cert-hover overflow-hidden">
+                        <img alt="Сертификат соответствия" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFncD86WmczCcJ32IRm7Fpf014t_grKps1A7ykRoKxZjk1hfu4hA1xudwTyggnYdFFC9UtSdyoY01mTgfRaA9yI_f9roTcWgM1btJFUJI1qIEl_N5qp3ur1DDFmxPcuLGvuTomy-4xZTB2BAGQjwIwSleyiFUXary5TEP5X30_sOwKRh_zVxosXVCHe0n42SlskDJcErIv-Sb6Keqy2iOQ2_-lFcz6GqRZzUY9YjsFCztdQyk-R551yjbtFlv-g81d0hPyPROj_BR9"
+                        />
+                    </div>
+                    <p class="text-sm font-bold text-primary px-2">Сертификат соответствия</p>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-corporate-grey border border-slate-200 rounded-xl p-6 aspect-[4/5] flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-105 cert-hover overflow-hidden">
+                        <img alt="Стандарт качества" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDif6UZx2k_S3u8fWUIKjuPd021_F5orCUgzM63XuxEMnUNPqxpmbpRYDPPYG7r3-flzq2h11xiij1uVYoBiy9ReG0yopaIGLLcihQaQylQbq9hpDEE0AH2vN3Q9irs1ONfB3ReU4cw9h3EJ6y2x8XoYSfJxFpnDNz-LJwF8yKb_Drmbxt1qElqHKZiWYMkhLTphCql0ov506mRTt5mnUnCyHkmeCrBM3jJ06jvmE8JJS4kikB-ImVUnG0l0_ruE1dh_M4GIkvlcYNv"
+                        />
+                    </div>
+                    <p class="text-sm font-bold text-primary px-2">Стандарт качества производства</p>
+                </div>
+                <div class="text-center group lg:block hidden">
+                    <div class="bg-corporate-grey border border-slate-200 rounded-xl p-6 aspect-[4/5] flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-105 cert-hover overflow-hidden">
+                        <img alt="Экологический аудит" class="w-full h-auto opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMW6_-Oobg5XaV3oThCuh4mdi2pJGcnmtMi-_aLHyn9LgBI7zJr91Hck5hJIm_aYbn2ezYr7cg9eiRGsLBgw4mDwiFPAhhSUJsNwWCecu3p3DuVyrWpEflrTTA27JPIEBxZVnEkVD05C4EoYB0K2AcIp9mTFirek49_o9yalw086s0NknYC0mPOzhZmvS3P6wBRLacQ0XgicS9fqjq46-KDokASs5a9spsfeMhM1c8MlSdtZfT6psZmOqxfdxfJqVH0suoXVU0AeUl"
+                        />
+                    </div>
+                    <p class="text-sm font-bold text-primary px-2">Экологический аудит</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-primary mb-4">Часто задаваемые вопросы</h2>
+                <p class="text-slate-600">Все, что вы хотели знать о производстве EPP и сотрудничестве с RHP.</p>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden" open="">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-slate-50 transition-colors">
+                        <span class="text-lg font-bold text-primary">Что такое EPP?</span>
+                        <span class="material-symbols-outlined text-accent-green group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Вспененный полипропилен (EPP) — это уникальный вспененный пластик с превосходными характеристиками поглощения энергии, многократной ударопрочностью, теплоизоляцией, стойкостью к воде и химикатам.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-slate-50 transition-colors">
+                        <span class="text-lg font-bold text-primary">Где используется продукция?</span>
+                        <span class="material-symbols-outlined text-accent-green group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Основные сферы применения: автомобилестроение (бамперы, вставки), упаковка ценных грузов, климатическая техника, мебель, спортивный инвентарь и строительство.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-slate-50 transition-colors">
+                        <span class="text-lg font-bold text-primary">Как связаться для сотрудничества?</span>
+                        <span class="material-symbols-outlined text-accent-green group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                        Вы можете оставить заявку через форму на сайте, написать нам на почту info@rhp.uz или позвонить по номеру +998 71 123-45-67. Мы открыты к партнерству с локальными и зарубежными компаниями.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
+                <div class="col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="text-accent-green">
+                            <svg class="w-10 h-10" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-black tracking-tighter text-white">RHODIUM</span>
+                            <span class="block text-xs font-bold tracking-[0.2em] text-accent-green">POLYMER</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-8 max-w-sm">Инновационное производство вспененного полипропилена. Мы строим будущее экологичной индустрии в Центральной Азии.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Информация</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a class="hover:text-accent-green" href="#history">О нас</a></li>
+                        <li><a class="hover:text-accent-green" href="#faq">FAQ</a></li>
+                        <li><a class="hover:text-accent-green" href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-accent-green">Контакты</h4>
+                    <p class="text-slate-400 mb-2">+998 71 123-45-67</p>
+                    <p class="text-slate-400">info@rhp.uz</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Локация</h4>
+                    <p class="text-slate-400">г. Чирчик, Технопарк «Чирчик», Блок A-12</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+                <p>© 2024 RHODIUM POLYMER. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
